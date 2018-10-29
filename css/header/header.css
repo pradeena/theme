@@ -223,7 +223,7 @@
 	display: inline-block;
 }
 
-.header-v6 li.menu-icons:first-child {
+.header-v6 li.menu-icons {
 	padding-right: 15px;
 }
 
