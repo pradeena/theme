@@ -1,0 +1,214 @@
+.slider-container{
+			width: 100%;
+			height: 400px;
+			background: url("img/slider-back.jpg") no-repeat;
+			background-size: 100% 100%;
+		}
+		.slide{
+			position: absolute;
+			width: 100%;
+            height: 400px;
+            overflow: hidden;
+		}
+		.slide>.upper-div{
+			position: relative;
+			width: 750px;
+			height: 100px;
+			margin: 0 auto;
+			font-family: 'PT Mono', monospace;
+			color: #fff;
+			font-size: 2em;
+			font-weight: bold;
+			text-shadow: 0px 2px 2px #333;
+			top: 10px;
+			animation: fromLeft 2s ease;
+			text-align: center;
+		}
+		.slide>.lower-div{
+			width: 1000px;
+			position: relative;
+			margin:0 auto;
+			animation: fromRight 2s ease;
+			text-align: center;
+		}
+		.slide>section{
+			position: relative;
+			width: 1000px;
+			height: 400px;
+			margin: 0 auto;
+		}
+		.slide>section>.left-div{
+			position: relative;
+            width: 300px;
+            float: left;
+            text-align: center;
+            font-size: 5em;
+            top: 50px;
+            font-family: 'PT Mono', monospace;
+            color: #fff;
+            text-shadow: 0px 2px 2px #333;
+            animation: fromTop 2s ease;
+		}
+		.slide>section>.right-div{
+			position: relative;
+			width: 600px;
+			float: right;
+			animation: fromBottom 2s ease;
+		}
+		.slide>.img-container{
+			position: relative;
+			/*width: 750px;
+			margin:0 auto;
+			top: 20%;*/
+			animation: fromDiagonal 2s ease;
+			text-align: center;
+		}
+		.slide>section>.sec-1{
+			width: 300px;
+			float: left;
+			height: 400px;
+		}
+		.slide>section>.sec-2{
+			width: 360px;
+			float: left;
+			height: 400px;
+			font-family: 'PT Mono', monospace;
+            color: #fff;
+            top: 30%;
+            text-align: center;
+            font-size: 2em;
+            position: relative;
+		}
+		.slide>section>.sec-3{
+			width: 330px;
+			float: left;
+			height: 400px;
+		}
+		.sec-1>img{
+			position: absolute;
+		    width: 280px;
+		    top: 15%;
+		    left: 1%;
+		}
+		.slide>.group{
+			position: relative;
+			animation: groupAnimation 2s ease;
+		}
+		.btn{
+			position: absolute;
+			font-size: 50px;
+			font-weight: bold;
+			color: #fff;
+			text-decoration: none;
+			top: 30%;
+			margin: 2%;
+			font-family: monospace;
+		}
+		#right{
+			right: 0;
+		}
+		@keyframes fromLeft{
+			0%{
+				left: -100%;
+			}
+			50%{
+				left: 100%;
+			}
+			100%{
+				left: 0;
+			}
+		}
+		@keyframes fromRight{
+			0%{
+				right: -100%;
+			}
+			50%{
+				right: 100%;
+			}
+			100%{
+				right: 0;
+			}
+		}
+		@keyframes fromTop{
+            0%{
+            	top:-100%;
+            }
+            50%{
+            	top: 100%;
+            }
+            100%{
+            	top: 50px;
+            }
+		}
+		@keyframes fromBottom{
+            0%{
+            	bottom:-100%;
+            }
+            50%{
+            	bottom: 100%;
+            }
+            100%{
+            	bottom: 0;
+            }
+		}
+		@keyframes fromDiagonal{
+			0%{
+				left: -100%;
+			}
+			50%{
+				left: 100%;
+			}
+			100%{
+				left: 0;
+			}
+		}
+		@keyframes groupAnimation{
+			0%{
+				top: -100%;left: -100%;
+			}
+			50%{
+				top: 100%;left: 100%;
+			}
+			100%{
+				top: 10%;left: 0;
+			}
+		}
+		@media screen and (max-width: 480px){
+			.slider-container{
+				height: 150px;
+			}
+			.slide{
+	            height: 150px;
+			}
+			.slide>.upper-div{
+				width: 100%;
+				height: 50px;
+				font-size: 1em;
+				top: 5px;;
+			}
+			.slide>.lower-div{
+				width: 300px;
+			}
+			.slide>.lower-div>img{
+				width: 300px;
+			}
+			.slide>section{
+			max-width: 100%;
+			height: 150px;
+			}
+			.slide>section>.left-div{
+	            width: 40%;
+	            font-size: 2em;
+	            top: 10px;
+			}
+			.slide>section>.right-div{
+				width: 60%;
+			}
+			.slide>section>.right-div>img{
+				width: 200px;
+			}
+			.btn{
+			font-size: 20px;
+			top: 20%;
+			}
+		}
