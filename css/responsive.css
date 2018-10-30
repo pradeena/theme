@@ -1,0 +1,4 @@
+@media (max-width: 991px){
+body.header-fixed-fixed {
+    padding-top: 0;
+}

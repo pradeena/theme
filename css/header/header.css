@@ -924,7 +924,7 @@
 		width: 100%;
 		height: auto;
 		z-index: 999;
-		/*position: fixed;*/
+		position: fixed;
 	}
 
 	.header-fixed .header-v6.header-fixed-shrink {

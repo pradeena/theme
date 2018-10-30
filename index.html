@@ -5,7 +5,9 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/header/header.css">
+<link rel="stylesheet" href="assets/layerslider/css/layerslider.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body class="header-fixed">
 <header>
@@ -25,7 +27,7 @@
 					<!-- Navbar Brand -->
 					<div class="navbar-brand">
 						<a href="index.html">
-							<img class="shrink-logo" src="assets/img/logo1-default.png" alt="Logo">
+							<img class="shrink-logo" src="img/logo.png" alt="Logo">
 						</a>
 					</div>
 					<!-- ENd Navbar Brand -->
@@ -115,6 +117,69 @@
 	</div>
 </header>
 
+		<!--=== Slider ===-->
+		<div id="layerslider" style="width: 100%; height: 500px;">
+			<!-- First slide -->
+			<div class="ls-slide" style="slidedirection: right; transition2d: 92,93,105; ">
+				<img src="img/slide1.jpg" class="ls-bg" alt="Slide background">
+
+				<span class="ls-s-1" style=" color: #fff; line-height:45px; font-weight: 200; font-size: 35px; top:200px; left: 50px; slidedirection : top; slideoutdirection : bottom; durationin : 1000; durationout : 1000; ">
+					Theme collection <br> 2018
+				</span>
+
+				<a class="btn-u btn-u-blue ls-s-1" href="#" style=" padding: 9px 20px; font-size:25px; top:340px; left: 50px; slidedirection : bottom; slideoutdirection : bottom; durationin : 2000; durationout : 2000; ">
+					View Detail
+				</a>
+				<a class="btn-u btn-u-grey ls-s-1" href="#" style=" padding: 9px 20px; font-size:25px; top:340px; left: 220px; slidedirection : bottom; slideoutdirection : bottom; durationin : 2000; durationout : 2000; ">
+					Live Demo
+				</a>
+
+				<img src="img/mobile.png" alt="Slider Image" class="ls-s-1" style=" top:30px; left: 400px; slidedirection : right; slideoutdirection : bottom; durationin : 3000; durationout : 3000; ">
+			</div>
+			<!-- End First slide -->
+
+			<!-- Second Slide -->
+			<div class="ls-slide" data-ls="slidedelay:4500; transition2d:25;">
+				<img src="img/slide1.jpg" class="ls-bg" alt="Slide background"/>
+
+				<img class="ls-l" src="img/mobile.png" style="top: 85%; left: 40%;"
+				data-ls="offsetxin:left; durationin:1500; delayin:900; fadein:false; offsetxout:left; durationout:1000; fadeout:false;" />
+
+				<span class="ls-s-1" style=" text-transform: uppercase; line-height: 45px; font-size:35px; color:#fff; top:200px; left: 590px; slidedirection : top; slideoutdirection : bottom; durationin : 3500; durationout : 3500; delayin : 1000;">
+					Theme Collection <br> 2018
+				</span>
+
+				<a class="btn-u btn-u-blue ls-s-1" href="#" style=" padding: 9px 20px; font-size:25px; top:340px; left: 590px; slidedirection : bottom; slideoutdirection : top; durationin : 3500; durationout : 2500; delayin : 1000; ">
+					View Detail
+				</a>
+				<a class="btn-u btn-u-grey ls-s-1" href="#" style=" padding: 9px 20px; font-size:25px; top:340px; left: 760px; slidedirection : bottom; slideoutdirection : top; durationin : 3500; durationout : 2500; delayin : 1000; ">
+					Live Demo
+				</a>
+			</div>
+			<!-- End Second Slide -->
+
+			<!-- Third Slide -->
+			<div class="ls-slide" data-ls="transition2d:93;">
+				<img src="img/slide1.jpg" class="ls-bg" alt="Slide background"/>
+
+				<img class="ls-l" src="img/mobile.png" style="top: 85%; left: 40%;"
+				data-ls="offsetxin:left; durationin:1500; delayin:900; fadein:false; offsetxout:left; durationout:1000; fadeout:false;" />
+
+				<span class="ls-s-1" style=" text-transform: uppercase; line-height: 45px; font-size:35px; color:#fff; top:200px; left: 590px; slidedirection : top; slideoutdirection : bottom; durationin : 3500; durationout : 3500; delayin : 1000;">
+					Theme Collection <br> 2018
+				</span>
+
+				<a class="btn-u btn-u-blue ls-s-1" href="#" style=" padding: 9px 20px; font-size:25px; top:340px; left: 590px; slidedirection : bottom; slideoutdirection : top; durationin : 3500; durationout : 2500; delayin : 1000; ">
+					View Detail
+				</a>
+				<a class="btn-u btn-u-grey ls-s-1" href="#" style=" padding: 9px 20px; font-size:25px; top:340px; left: 760px; slidedirection : bottom; slideoutdirection : top; durationin : 3500; durationout : 2500; delayin : 1000; ">
+					Live Demo
+				</a>
+			</div>
+			<!-- Third Slide -->
+		</div><!--/layer_slider-->
+		<!--=== End Slider ===-->
+
 <section class="content-area">
 	<div class="container">
 		<div class="home-content">
@@ -128,7 +193,7 @@
 	<div class="container">
 		<div class="home-service">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home-service-one">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home-service-one animated bounce">
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 service-left">
 							<div class="service-icon">
@@ -236,6 +301,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="view-btn"><a href="">View More</a></div>
 	</div>
 </section>
 
@@ -244,8 +310,8 @@
 		<div class="theme-list">
 			<div class="row">
 				<div class="theme-one">
-					<h2>Themes</h2>
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<h2>plugins</h2>
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 						<div class="theme-image">
 							<a href=""><img src="img/plugin.png"></a>
 							<a href="" class="theme-name"><h4>Plugin one</h4></a>
@@ -254,7 +320,7 @@
 							<a href=""><button type="button" class="btn1"><i class="fas fa-align-left"></i>Details</button></a>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 						<div class="theme-image">
 							<a href=""><img src="img/plugin.png"></a>
 							<a href="" class="theme-name"><h4>Plugin two</h4></a>
@@ -263,7 +329,16 @@
 							<a href=""><button type="button" class="btn1"><i class="fas fa-align-left"></i>Details</button></a>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+						<div class="theme-image">
+							<a href=""><img src="img/plugin.png"></a>
+							<a href="" class="theme-name"><h4>Plugin three</h4></a>
+							<div class="theme-price">Free</div>
+							<a href=""><button type="button" class="btn"><i class="fas fa-tv"></i> Live demo</button></a>
+							<a href=""><button type="button" class="btn1"><i class="fas fa-align-left"></i>Details</button></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 						<div class="theme-image">
 							<a href=""><img src="img/plugin.png"></a>
 							<a href="" class="theme-name"><h4>Plugin three</h4></a>
@@ -275,6 +350,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="view-btn"><a href="">View More</a></div>
 	</div>
 </section>
 
@@ -404,6 +480,15 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/back-to-top.js"></script>
+<script type="text/javascript" src="assets/layerslider/js/greensock.js"></script>
+<script type="text/javascript" src="assets/layerslider/js/layerslider.transitions.js"></script>
+<script type="text/javascript" src="assets/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+<script type="text/javascript" src="assets/layerslider/js/layer-slider.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+			LayerSlider.initLayerSlider();
+		});
+</script>
 </body>
 </html>
 
