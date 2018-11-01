@@ -1,0 +1,109 @@
+.product-banner {
+    background: url(../img/product-banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    color: #fff;  
+}
+.product-banner .pb-title {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 30px;
+    padding-top: 30px;
+    margin-top: 0px;
+}
+.menu {
+  top: 0;
+  left: 0;
+  right: 0;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.menu > li {
+  display: inline-block;
+}
+.menu > li > a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+.menu > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.menu > li > a.active {
+  color: tomato;
+  text-shadow: 0 0 3px black;
+}
+
+[id*="section-"] {
+  text-align: center;
+  font-size: 60px;
+  padding: 400px 0;
+  color: white;
+  background-image: linear-gradient(to bottom, #2ecc71 0%, #3498db 100%);
+}
+[id*="section-"]:nth-child(odd) {
+  background-image: linear-gradient(to bottom, #e67e22 0%, #e74c3c 100%);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1003;
+    left: 0;
+    right: 0;
+    background: red;
+}
+.product-detail-left, .product-detail-right {
+    background: #f5f6f7;
+    padding: 20px;
+}
+.product-detail {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.product-detail-left p {
+    line-height: 32px;
+    text-align: justify;
+    font-size: 16px;
+}
+ul.entity-option li {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+label.option-one {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 10px 0 8px;
+}
+.entity-price {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 1px solid #e1e5eb;
+    padding-top: 27px;
+}
+.btn-demo {
+    text-align: center;
+    margin-top: 35px;
+}
+.btn-demo .admin-btn {
+    background: #45ADA8;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.btn-demo .live-btn {
+    background: #594F4F;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+}

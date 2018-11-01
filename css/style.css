@@ -1,9 +1,9 @@
-body{font-family: "Palatino";overflow-x: hidden;}
+body{font-family: 'Open Sans', sans-serif;overflow-x: hidden;}
 
 h1, h2, h3, h4, h5 {
     padding: 0px;
     font-size: 30px;
-    font-family: "Roboto Condensed";
+    font-family: 'Open Sans', sans-serif;
 }
 a {
     text-decoration: none;
